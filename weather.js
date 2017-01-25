@@ -13,7 +13,6 @@ function onLocation(locObj) {
 
   populate("location", city)
 }
-
 function onWeather(weatherObj) {
   var tempK = weatherObj.main.temp
   var descr = weatherObj.weather["0"].main
@@ -121,6 +120,7 @@ function nightVis(h) {
     changeClass(getById("time"), "nightText")
     changeClass(getById("tempBox"), "nightText")
     changeClass(getById("box"), "nightBox")
+    changeClass(getById("footer"), "nightText")
   }
 }
 
